@@ -1,100 +1,16 @@
-Bilgisayarında aşağıdakiler kurulu olmalı:
+# React + Vite
 
-Node.js (v18 veya üzeri önerilir)
-👉 https://nodejs.org
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-npm (Node.js ile birlikte gelir)
+Currently, two official plugins are available:
 
-Kurulu mu kontrol etmek için:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-node -v
-npm -v
+## React Compiler
 
-📦 Projeyi Kurma
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Proje klasörüne gir:
+## Expanding the ESLint configuration
 
-cd ski-places-frontend
-
-
-Bağımlılıkları yükle:
-
-npm install
-
-▶️ Projeyi Çalıştırma
-
-Geliştirme ortamında projeyi başlatmak için:
-
-npm run dev
-
-
-Terminalde buna benzer bir çıktı görürsün:
-
-VITE v5.x.x  ready in 500 ms
-
-➜  Local:   http://localhost:5173/
-
-
-Tarayıcıdan aç:
-
-👉 http://localhost:5173
-
-🔐 Admin Girişi (Development)
-
-Backend / DB hazır değilse mock admin login kullanılır.
-
-/admin/login sayfasına git
-
-Login butonuna bas
-
-Otomatik olarak admin paneline yönlendirilirsin
-
-⚠️ Bu özellik sadece development ortamı içindir.
-
-🧱 Kullanılan Teknolojiler
-
-⚡ Vite
-
-⚛️ React
-
-🎨 Tailwind CSS
-
-🔁 React Router
-
-🌐 Axios
-
-📁 Proje Yapısı (Özet)
-src/
-├─ api/
-├─ components/
-├─ pages/
-│  ├─ Admin/
-│  ├─ Landing
-│  ├─ SkiAreas
-│  └─ SkiAreaDetail
-├─ routes/
-├─ utils/
-└─ main.jsx
-
-🛠️ Backend Bağlantısı
-
-Backend hazır olduğunda sadece:
-
-api/AxiosInstance.js
-
-BASE_URL
-
-ayarlarının güncellenmesi yeterlidir.
-
-✅ Notlar
-
-Login olmayan kullanıcılar yorum yapamaz
-
-Admin paneli protected route ile korunur
-
-Fotoğraflar MinIO üzerinden yüklenir
-
-👨‍💻 Geliştirici Notu
-
-Bu proje frontend–backend ayrımı gözetilerek geliştirilmiştir.
-Backend servisleri hazır olmasa bile frontend geliştirmesi kesintisiz devam edebilir.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
